@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="my-8 rounded-xl blur white--text">
     <v-row class="text-center">
       <v-col cols="12" class="mb-4 my-3">
         <h1 class="heading font-weight-bold mb-3">
@@ -9,7 +9,7 @@
           Maximal mögliche Zeiten auf Nachbardistanzen
         </p>
       </v-col>
-      <v-col sm="4" offset-sm="2">
+      <v-col sm="4" offset-sm="2" class="white--text">
         <v-text-field v-model="test1500m" label="1.500 m"></v-text-field>
         <v-text-field v-model="test3000m" label="3.000 m"></v-text-field>
         <v-text-field v-model="test5k" label="5.000 m"></v-text-field>
@@ -66,3 +66,15 @@
   }
 </script>
 
+<style>
+  .blur{
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+  }
+  .theme--light.v-input input, .theme--light.v-input, .theme--light.v-label {
+    color:white !important;
+  }
+  .v-application .primary--text{
+    color:white !important;
+  }
+</style>

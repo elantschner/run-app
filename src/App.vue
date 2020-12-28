@@ -32,7 +32,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="bg">
       <Wettkampfzeiten/>
     </v-main>
   </v-app>
@@ -53,3 +53,12 @@ export default {
   }),
 };
 </script>
+
+<style>
+  .bg {
+    top: 0;
+    left: 0;
+    background-image: url(assets/runner.jpg);
+    background-size: cover;
+  }
+</style>
