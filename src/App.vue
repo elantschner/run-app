@@ -7,17 +7,14 @@
     >
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="speed.svg"
           transition="scale-transition"
           width="40"
         />
-
-        <h1>RunApp</h1>
-
-        
+        <h1>RunApp</h1>       
       </div>
 
       <v-spacer></v-spacer>

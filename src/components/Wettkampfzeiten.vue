@@ -1,5 +1,5 @@
 <template>
-  <v-container class="my-8 rounded-xl blur white--text">
+  <v-container class="my-md-8 py-8 blur white--text elevation-10">
     <v-row class="text-center">
       <v-col cols="12" class="mb-4 my-3">
         <h1 class="heading font-weight-bold mb-3">
@@ -10,20 +10,20 @@
         </p>
       </v-col>
       <v-col sm="4" offset-sm="2" class="white--text">
-        <v-text-field v-model="test1500m" label="1.500 m"></v-text-field>
-        <v-text-field v-model="test3000m" label="3.000 m"></v-text-field>
-        <v-text-field v-model="test5k" label="5.000 m"></v-text-field>
-        <v-text-field v-model="test10k" label="10.000 m"></v-text-field>
-        <v-text-field v-model="test10k" label="10.000 m"></v-text-field>
-        <v-text-field v-model="test21k" label="Halbmarathon"></v-text-field>
+        <v-text-field v-model="test1500m" label="1.500 m" dark></v-text-field>
+        <v-text-field v-model="test3000m" label="3.000 m" dark></v-text-field>
+        <v-text-field v-model="test5k" label="5.000 m" dark></v-text-field>
+        <v-text-field v-model="test10k" label="10.000 m" dark></v-text-field>
+        <v-text-field v-model="test10k" label="10.000 m" dark></v-text-field>
+        <v-text-field v-model="test21k" label="Halbmarathon" dark></v-text-field>
       </v-col>      
       <v-col sm="4">
-        <v-text-field :value="formatieren(berechnen(test1500m)*2+20)" label="3.000 m" disabled></v-text-field>
-        <v-text-field :value="formatieren((berechnen(test3000m)*+20)*1.666)" label="5.000 m" disabled></v-text-field>
-        <v-text-field :value="formatieren(berechnen(test5k)*2+60)" label="10.000 m" disabled></v-text-field>
-        <v-text-field :value="formatieren(berechnen(test10k)*2.21)" label="Halbmarathon" disabled></v-text-field>
-        <v-text-field :value="formatieren(berechnen(test10k)*4.666)" label="Marathon" disabled></v-text-field>
-        <v-text-field :value="formatieren(berechnen(test21k)*2.11)" label="Marathon" disabled></v-text-field>
+        <v-text-field :value="formatieren(berechnen(test1500m)*2+20)" label="3.000 m" disabled dark></v-text-field>
+        <v-text-field :value="formatieren((berechnen(test3000m)+20)*1.666)" label="5.000 m" disabled dark></v-text-field>
+        <v-text-field :value="formatieren(berechnen(test5k)*2+60)" label="10.000 m" disabled dark></v-text-field>
+        <v-text-field :value="formatieren(berechnen(test10k)*2.21)" label="Halbmarathon" disabled dark></v-text-field>
+        <v-text-field :value="formatieren(berechnen(test10k)*4.666)" label="Marathon" disabled dark></v-text-field>
+        <v-text-field :value="formatieren(berechnen(test21k)*2.11)" label="Marathon" disabled dark></v-text-field>
       </v-col>
 
     </v-row>
@@ -68,13 +68,7 @@
 
 <style>
   .blur{
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgb(200, 0, 0, 0.7);
     backdrop-filter: blur(8px);
-  }
-  .theme--light.v-input input, .theme--light.v-input, .theme--light.v-label {
-    color:white !important;
-  }
-  .v-application .primary--text{
-    color:white !important;
   }
 </style>
