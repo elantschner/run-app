@@ -2,9 +2,9 @@
   <v-container class="my-md-8 py-8 blur white--text elevation-10">
     <v-row class="text-center">
       <v-col cols="12" class="mb-4 my-3">
-        <h1 class="heading font-weight-bold mb-3">
+        <h2 class="font-weight-bold mb-3">
           Wettkampfzeitenrechner
-        </h1>
+        </h2>
         <p class="subheading font-weight-regular">
           Maximal mögliche Zeiten auf Nachbardistanzen
         </p>
@@ -25,7 +25,6 @@
         <v-text-field :value="formatieren(berechnen(test10k)*4.666)" label="Marathon" disabled dark></v-text-field>
         <v-text-field :value="formatieren(berechnen(test21k)*2.11)" label="Marathon" disabled dark></v-text-field>
       </v-col>
-
     </v-row>
   </v-container>
 </template>
